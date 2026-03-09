@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Silva | Advocacia Previdenciária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Paleta de Cores: Off-white, Dourado Suave e Azul Marinho Leve */
+        :root {
+            --cor-fundo: #F9F9F9;
+            --cor-primaria: #1A2F4B; /* Azul Marinho Suave */
+            --cor-detalhe: #D4AF37;  /* Dourado */
+            --cor-texto: #444;
+            --cor-whatsapp: #25D366;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--cor-primaria);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--cor-primaria);
+            font-weight: 500;
+        }
+
+        /* Seção Hero */
+        .hero {
+            padding: 100px 5%;
+            text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--cor-primaria);
+            margin-bottom: 20px;
+        }
+
+        .btn-cta {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-cta:hover {
+            background-color: var(--cor-detalhe);
+        }
+
+        /* Áreas de Atuação */
+        .servicos {
+            padding: 60px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border-bottom: 4px solid var(--cor-detalhe);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            text-align: center;
+        }
+
+        /* Localização */
+        .contato-info {
+            background: #fff;
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        /* Botão WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: var(--cor-whatsapp);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        footer {
+            background: var(--cor-primaria);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Daniela Silva</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#atuacao">Atuação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Protegendo o seu futuro e garantindo os seus direitos.</h1>
+        <p>Especialista em Direito Previdenciário. Aposentadorias e Benefícios do INSS.</p><br>
+        <a href="https://wa.me/5573998587232" class="btn-cta">CONSULTA ONLINE</a>
+    </section>
+
+    <h2 style="text-align: center; margin-top: 50px;" id="atuacao">Áreas de Atuação</h2>
+    <section class="servicos">
+        <div class="card">
+            <h3>Aposentadorias</h3>
+            <p>Idade, Tempo de Contribuição, Especial e Invalidez.</p>
+        </div>
+        <div class="card">
+            <h3>BPC/LOAS</h3>
+            <p>Assistência para idosos e pessoas com deficiência.</p>
+        </div>
+        <div class="card">
+            <h3>Auxílio-Doença</h3>
+            <p>Garantia de renda durante sua recuperação.</p>
+        </div>
+        <div class="card">
+            <h3>Pensão por Morte</h3>
+            <p>Segurança para sua família nos momentos difíceis.</p>
+        </div>
+    </section>
+
+    <section class="contato-info" id="contato">
+        <h2>Onde Estamos</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Rua [NOME DA RUA], Nº [NÚMERO]</p>
+        <p>Bairro [NOME DO BAIRRO] - Itamaraju, Bahia</p>
+        <p><i class="fas fa-phone"></i> (73) 99858-7232</p>
+    </section>
+
+    <a href="https://wa.me/5573998587232?text=Olá,%20Dra.%20Daniela.%20Gostaria%20de%20uma%20consultoria%20previdenciária." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Daniela Silva Advocacia Previdenciária. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
